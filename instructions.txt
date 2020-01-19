@@ -1,0 +1,102 @@
+QUICKSPIN FRONTEND GAME DEVELOPER TEST - GAMIFICATION
+
+## THE TASK
+
+This test will require you to write some html, css and javascript to visualize
+a leaderboard, much like the ones used in tournaments, looking something like:
+
+|-----------------------------------|
+| #1 | YOU           | 82005 points |
+|-----------------------------------|
+| #2 | B3F           | 10000 points |
+|-----------------------------------|
+| #3 | B4A           | 9000 points  |
+|-----------------------------------|
+| .....
+|-----
+....
+
+A basic API (found in js/API.js) is provided which gives you 
+some leaderboard data. The method allows the player to progress
+everytime it is called, for example: 
+
+getLeaderboard(): // player position is 15
+getLeaderboard(); // player position is 14
+getLea.. 
+.. 
+.. etc
+
+
+Your task is to implement the leaderboard with HTML, CSS and javascript and to
+make it look playful by styling it and animating player's position changes.
+
+## TOOLS
+
+You may use any IDE / editor you are comfortable with. 
+
+The use of 3rd party libraries is permitted but not necessary - all of the tasks should
+be completable with plain old javascript (a.k.a vanilla javascript).
+
+Note that no server is needed to run the code. Just open the index.html
+in a browser of your choice.
+
+
+## TASKS / INSTRUCTIONS
+
+1. Create a button in the index.html file that, when clicked, calls
+    the onLeaderboardUpdate function from js/scripts.js.
+
+    Clicking this button will be used to simulate time passing.
+
+
+2. Build the leaderboard! 
+    
+    Write the HTML/js to display the leaderboard from the given 
+    data in the index.html file and onLeaderboardUpdate function in the 
+    scripts.js file inside the js folder.
+
+
+3. Style it so it looks a tad happier! 
+
+    A hot recommendation is to put the css in the main.css file inside
+    of the css folder.
+
+
+4. Sort the leaderboard data before showing it!
+      
+    Real world data doesn’t always arrive in the right order. In this
+    task this is simulated, but imagine it comes from somewhere else.
+
+    The task is simple - sort the leaderboard so it displays correctly!
+    Sort the list in the onLeaderboardUpdate() function in the scripts.js
+    file inside the js folder.
+
+
+5. Make the player's row stand out! 
+
+    A real time leaderboard may update often, and it should be easy to see
+    where the actual player is positioned! Highlight the player row in a
+    way of your choosing. A pro tip is to also put this logic in the
+    onLeaderboardUpdate() function in the scripts.js file inside the
+    js folder (along with some CSS for styling, of course!)
+
+6. Give more focus to the player by animating the rank change!
+    
+    Using CSS animations, animate the player position when it gets a new
+    rank / position.
+
+
+## Bonus tasks (if there's time and you want to shine a bit extra):
+
+b1. Add a little box which shows your position in the top of the screen.
+    If you’re in first place, it could say “#1”, “You are in place 1",
+    or something of the like.
+
+b2. Using CSS animations, animate the different objects to make the
+    webpage more interesting to behold. 
+
+b3. Play a sound if the player reaches the first place!
+
+
+And lastly - have fun! Good luck!
+
